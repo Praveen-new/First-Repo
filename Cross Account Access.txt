@@ -1,0 +1,34 @@
+Cross Account Access:
+
+Account-1:908656578071
+
+Account-2:567151218141
+
+Goto Account-1 Create IAM Role
+
+Role ARN:
+   arn:aws:iam::908656578071:role/Role_Account2
+
+Goto Account 2
+
+Create a New user
+
+add below role as inline policy:
+
+{
+    "Version":"2012-10-17",
+    "Statement": {
+      "Effect": "Allow",
+      "Action": "sts:AssumeRole",
+      "Resource": "arn:aws:iam::908656578071:role/Role_Account2"
+    }
+}
+
+
+Now Login into Account-1 from Account-2 user
+
+Successfully Done
+
+
+
+

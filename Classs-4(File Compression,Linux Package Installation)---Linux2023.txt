@@ -1,0 +1,152 @@
+    File Compression Commands(zip,unzip,tar):
+   
+    2  mkdir aws
+    3  ls
+    4  cat>file1.txt
+    5  cat file1.txt
+    6  cat>file2.txt
+    7  cat file2.txt
+    8  ls
+    9  cd aws
+   10  cat>file3.txt
+   11  cat file3.txt
+   12  cd ..
+   13  clear
+   14  ls -ltr
+   15  cat file1.txt
+   16  gzip file1.txt
+   17  ls
+   18  ls -ltr
+   19  cat file1.txt.gz
+   20  gzip file2.txt
+   21  ls -ltr
+   22  cat file2.txt.gz
+   23  clear
+   24  ls -ltr
+   25  gunzip file1.txt.gz
+   26  ls -ltr
+   27  cat file1.txt
+   28  gunzip file2.txt
+   29  ls -ltr
+   30  cat file2.txt
+   31  clear
+   32  tree .
+   33  sudo yum install tree
+   34  cleaar
+   35  clea
+   36  clear
+   37  tree .
+   38  cd aws
+   39  ls
+   40  gzip file3.txt
+   41  ls
+   42  cat file3.txt.gz
+   43  ls
+   44  gunzip file3.txt
+   45  ls
+   46  cat file3.txt
+   47  clear
+   48  tree .
+   49  pwd
+   50  ls
+   51  cat>file4.txt
+   52  cat>file5.txt
+   53  cat>file6.txt
+   54  mkdir devops
+   55  ls
+   56  tree .
+   57  cd ..
+   58  clea
+   59  clear
+   60  tree .
+   61  tar cvf archive.tar aws/
+   62  ls
+   63  gzip archive.tar
+   64  ls -ltr
+   65  clear
+   66  tree .
+   67  mkdir second
+   68  tree .
+   69  cp archive.tar.gz second/
+   70  clear
+   71  tree .
+   72  cd second
+   73  ls -ltr
+   74  tar xvf archive.tar.gz
+   75  ls -ltr
+   76  cd aws
+   77  ls
+   78  cat file5.txt
+   79  cd ..
+   80  clear
+   81  tree .
+   82  mkdir third
+   83  tree .
+   84  cp archive.tar.gz third/
+   85  tree .
+   86  cd third
+   87  ls
+   88  tar xvf archive.tar.gz
+   89  ls
+   90  cd ..
+   91  clear
+   92  tree .
+
+Removing non-empty directories and files:
+
+   93  rmdir aws
+   94  rm -r aws
+   95  tree .
+   96  rmdir second
+   97  rm -r second
+   98  tree .
+   99  rm archive.tar.gz
+  100  tree .
+  101  rmdir third
+  102  rm -r third
+  103  tree .
+  104  rm file1.txt file2.txt
+  105  ls
+
+
+Linux Package Installation:
+
+  Ubuntu:
+
+sudo su -
+    1  pwd
+    2  apt-get update
+    3  clear
+    4  nginx -v
+    5  apt install nginx
+    6  clear
+    7  nginx -v
+    8  apt-get install mysql-server
+    9  clear
+   10  mysql -v
+   11  clear
+   12  apt-get install apache2
+   13  clear
+   14  apache2 -v
+   15  git --version
+
+Linux 2023 or Linux2:
+        sudo su -
+    1  yum update
+    2  git --version
+    3  yum install git
+    4  clear
+    5  git --version
+    6  yum install nginx
+    7  clear
+    8  nginx -v
+    9  yum install java
+   10  clear
+   11  java -version
+   12  yum install httpd
+   13  clear
+   14  httpd -v
+   15  dnf install mariadb105
+   16  cleaar
+   17  clear
+   18   mysql --version
